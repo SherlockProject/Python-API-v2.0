@@ -1,0 +1,34 @@
+	html, body, blockquote, p, h1, h2, h3, h4, h5, h6, pre, ul, ol, li, dl, dt, dd, form, fieldset, input, textarea {
+		margin: 0; padding: 0;
+		outline: none;
+	}
+	ul, ol, li {
+		list-style-type: none;
+	}
+	/* HTML5 tags */
+	header, section, figure, figcaption, article, nav, aside, footer {
+		margin: 0; padding: 0;
+		display: block;
+		outline: none;
+	}
+
+	img {
+		-webkit-touch-callout: none;
+		-webkit-user-select: none;
+		-khtml-user-select: none;
+		-moz-user-select: none;
+		-ms-user-select: none;
+		pointer-events: none;
+		user-select: none;
+	}
+
+	body {
+		font-family: 'Lato', serif;
+	}
+
+	#container {
+		margin: 50px 50px 0 50px;
+	}
+	h1 {
+		text-align: center;
+	}
