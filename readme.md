@@ -255,7 +255,7 @@ print( result );
 
 Sometimes the operations require certain parameters to be passed to the server. These parameters are described in the APIs page. You can take a look by clicking `Expand Operations`
 
-![operations](http://imgur.com/fPs1qEU "Operation Parameters")
+![operations](http://i.imgur.com/fPs1qEU.png "Operation Parameters")
 
 Here you need to pass three arguments: `seeds`, `dataset` and `label`.
 
