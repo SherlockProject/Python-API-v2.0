@@ -9,7 +9,8 @@ Using Watson Services from BlueMix (online and locally) through a web server
 	- [managing requests](#managing-requests)
 - [Using Watson services](#using-watson-services)
 	- [setup a service](#setup-a-service)
-	- [setting up service with multiple operations](#setting-up-service-with-multiple-operations)
+	- [having multiple operations](#setting-up-service-with-multiple-operations)
+	- [calling a service](#calling-a-service)
 
 ## Usage
 The main file is `server.py`. The name could be changed. However in case you need to upload ("push") the app online, you need to indicate the name of the file in `Procfile`.
