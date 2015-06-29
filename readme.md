@@ -1,6 +1,16 @@
 # Python API v2.0
 Using Watson Services from BlueMix (online and locally) through a web server
 
+## Table of contents
+- [Usage](#usage)
+- [To run a server](#to-run-a-server)
+- [Routing the server](#routing-the-server)
+	- [content types](#content-types)
+	- [managing requests](#managing-requests)
+- [Using Watson services](#using-watson-services)
+	- [setup a service](#setup-a-service)
+	- [setting up service with multiple operations](#setting-up-service-with-multiple-operations)
+
 ## Usage
 The main file is `server.py`. The name could be changed. However in case you need to upload ("push") the app online, you need to indicate the name of the file in `Procfile`.
 
@@ -48,7 +58,7 @@ Once the server is started you can run the `test1` function through address `htt
 
 Names of the functions **don't** matter. It makes no difference if you use _'def test1():'_ or _'def banana():'_.
 
-## Content Types
+### Content Types
 
 You can return several content types to the browser. The default one is `text/html`. This means that the browser will interpret the result as HTML code. This could cause problems if you want to use some characters which are considered special in HTML, e.g. <, >, &.
 
@@ -104,7 +114,7 @@ A list of interesting content types (`request.content_type='...';`):
 * text/html (HTML code)
 
 
-## Managing Requests
+### Managing Requests
 
 Except for the `@route('/...')` descriptor you can also use specific descriptors like `@get('/...')` and `@post('/...')` to specify the request method.
 
@@ -240,7 +250,7 @@ conexp = WatsonService(
 WebServer.start();
 ~~~
 
-### Using a service
+### Calling a service
 
 To use a service you need to call `service_instance`.`operation_name`(); Example using the code above:
 
